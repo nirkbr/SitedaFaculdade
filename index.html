@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertCash</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/vars.css">
+
+</head>
+
+<body>
+
+    <!-- Inicío -->
+    <form action="#" class="conversor_position">
+        <div class="conversor_style">
+            <h1>Conversor de Moedas</h1>
+
+            <div class="insira_um_valor">
+                <p>Converta sua moeda!</p>
+                <input type="text" name="valor" id="valor">
+            </div>
+
+            <div class="entrega_de_resultados">
+                <div class="caixa_de_selecao">
+                    <p>De</p> 
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="Bandeira" id="de"> <!--Iamgem das bandeiras-->
+                    <select name="from" id="from"> <!--Início das opções-->
+                        <option value="usd">USD</option>
+                        <option value="cad">CAD</option>
+                        <option value="aud">AUD</option> 
+                        <option value="ndz">NZD</option> 
+                        <option value="brl">BRL</option>
+                        <option value="jpy">JPY</option>
+                        <option value="cnh">CNH</option>
+                    </select>
+                </div>
+                <div class="icon"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                <div class="caixa_de_para">
+                    <p>Para</p>
+                    <img src="https://flagsapi.com/BR/flat/64.png" alt="Bandeira" id="para"><!--Iamgem das bandeiras-->
+                    <select name="to" id="to">
+                        <option value="usd">USD</option>
+                        <option value="cad">CAD</option>
+                        <option value="aud">AUD</option> 
+                        <option value="ndz">NZD</option> 
+                        <option value="brl">BRL</option>
+                        <option value="jpy">JPY</option>
+                        <option value="cnh">CNH</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="app.js"></script>
+    
+    <script src="https://kit.fontawesome.com/57094d7fd5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
