@@ -10,7 +10,7 @@
 body {
     display: flex;
     justify-content: center;
-    background: linear-gradient(#02691c , #030f39, #010412);
+    background: linear-gradient( #030f39, #030b18, #ff7010);
     min-height: 100vh;
 }
 
@@ -18,8 +18,9 @@ body {
 .conversor_position {
     margin: 3rem 2rem;
     width: 40%;
-    height: 20rem;
-    background-color: rgb(255, 255, 255);
+    height: 75vh;
+    background-color: hsl(00, 0%, 80%);
+    border-radius: 4px;
 }
 
 .conversor_style {
@@ -27,33 +28,80 @@ body {
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    padding: 1rem 0;
+}
+
+#valor {
+    width: 70%;
 }
 
 .entrega_de_resultados {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: space-evenly;
+    margin: 1%;
 }
 
 .caixa_de_selecao {
+    display: flex;
+    flex-direction: column;
     padding: 0rem -2rem; 
 }
 
-.entrega_de_resultados p {
+  
+.entrega_de_resultados i {
+   padding-top: 2.5rem;
+} 
+
+.caixa_de_para {
+    display: flex;
+    flex-direction: column;
+}
+
+.de {
+    width: 3.9rem;
+    height: 3.5rem;
+    background-color: hsl(00, 0%, 80%);
+    border: solid 2px #000;
+    border-radius: 2px;
+}
+
+#bandeira_De {
+    width: 3rem;
+}
+
+select {
+    cursor: pointer;
+}
+
+.para {
+    width: 3.9rem;
+    height: 3.5rem;
+    background-color: hsl(00, 0%, 80%);
+    border: solid 2px #000;
+    border-radius: 2px;
+}
+
+#bandeira_para {
+    width: 3rem;
+}
+
+#botao_converter {
+    width: 50%;
+    cursor: pointer;
+    margin: 1rem auto 2rem;
+}
+
+.resultado {
     display: flex;
     justify-content: center;
+    text-align: center;
+    width: 12rem;    
+    height: 2rem;
+    margin: 3rem auto 0.5rem;
+    background-color: #737476;
 }
 
-#de {
-    width: 3.9rem;
-    height: 3.5rem;
-    background-color: #fff;
-    border: solid 1px #000;
-}
-
-#para {
-    width: 3.9rem;
-    height: 3.5rem;
-    background-color: #fff;
-    border: solid 1px #000;
+#local_do_resultado {
+    color: aliceblue;
+    font-size: 10px;
 }
