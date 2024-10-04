@@ -12,9 +12,21 @@
 
 <body>
 
-    <!-- Inicío -->
-    <form action="#" class="conversor_position">
-        <div class="conversor_style">
+    <div class="botaoTema"> <!--Inicío do Botão que vai mudar o tema de cor do site-->
+
+        <input type="checkbox" class="checkbox" id="caixaDeChecagem"> <!--Este input diz que aqui vai ser uma caixa de checagem-->
+
+        <label for="caixaDeChecagem" class="btnIluminacao">
+            <i class="fa-regular fa-moon"></i>
+            <i class="fa-regular fa-sun"></i>
+            <div id="ball"></div>
+        </label>
+
+    </div> <!-- Fim do Botão Tema -->
+
+    
+    <main action="#" class="#conversor_position"> <!-- Inicío do conversor -->
+        <div class="conversor_style" id="conversor_style ">
 
             <header class="titulo_conversor">
                 <h1>Conversor de Moedas</h1>
@@ -27,14 +39,15 @@
 
             <div class="entrega_de_resultados"> <!--Inicio do Container-->
                 <div class="caixa_de_selecao"> <!--Início da Caixa de opções-->
-                    <p>De</p> 
+                    <p>De</p>
                     <div class="de">
-                        <img src="https://flagsapi.com/US/flat/64.png" alt="Bandeira" id="bandeira_De"> <!--Iamgem das bandeiras-->
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="Bandeira" id="bandeira_De">
+                        <!--Iamgem das bandeiras-->
                         <select name="from" id="from"> <!--Início das opções-->
                             <option value="usd">USD</option>
                             <option value="cad">CAD</option>
-                            <option value="aud">AUD</option> 
-                            <option value="ndz">NZD</option> 
+                            <option value="aud">AUD</option>
+                            <option value="ndz">NZD</option>
                             <option value="brl">BRL</option>
                             <option value="jpy">JPY</option>
                             <option value="cnh">CNH</option>
@@ -42,18 +55,21 @@
                     </div>
                 </div> <!--Fim da Caixa de opções-->
 
-                <div class="icone_moeda"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                <div class="icone_moeda">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                </div>
 
                 <div class="caixa_de_para"> <!--Início do caixa para-->
                     <p>Para</p>
                     <div class="para">
-                        <img src="https://flagsapi.com/BR/flat/64.png" alt="Bandeira" id="bandeira_para"><!--Iamgem das bandeiras-->
+                        <img src="https://flagsapi.com/BR/flat/64.png" alt="Bandeira"
+                            id="bandeira_para"><!--Iamgem das bandeiras-->
                         <select name="to" id="to">
+                            <option value="brl">BRL</option>
                             <option value="usd">USD</option>
                             <option value="cad">CAD</option>
-                            <option value="aud">AUD</option> 
-                            <option value="ndz">NZD</option> 
-                            <option value="brl">BRL</option>
+                            <option value="aud">AUD</option>
+                            <option value="ndz">NZD</option>
                             <option value="jpy">JPY</option>
                             <option value="cnh">CNH</option>
                         </select>
@@ -71,11 +87,12 @@
 
         </div> <!--Fim do conversor style-->
 
-    </form> <!--Fim do Container-->
+    </main> <!--Fim do Conversor-->
 
     <script src="app.js"></script>
-    
-    <script src="https://kit.fontawesome.com/57094d7fd5.js" crossorigin="anonymous"></script> <!--Importação do fontAwesome-->
+
+    <script src="https://kit.fontawesome.com/57094d7fd5.js" crossorigin="anonymous"></script>
+    <!--Importação do fontAwesome-->
 </body>
 
 </html>

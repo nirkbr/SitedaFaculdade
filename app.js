@@ -12,6 +12,16 @@ const currencyNames = {
     CNH: 'Yuan Chinês'
 };
 
+const currencyFlags = {
+    USD: 'path/to/flags/usd.png',
+    CAD: 'path/to/flags/cad.png',
+    AUD: 'path/to/flags/aud.png',
+    NZD: 'path/to/flags/nzd.png',
+    BRL: 'path/to/flags/brl.png',
+    JPY: 'path/to/flags/jpy.png',
+    CNH: 'path/to/flags/cnh.png'
+}
+
 async function getExchangeRate(from) {
     const response = await fetch(apiURL + from.toUpperCase());
     if (!response.ok) {
@@ -27,7 +37,9 @@ async function clicar() {
     const valor = parseFloat(document.getElementById('valor').value);
     const fromCurrency = document.getElementById('from').value; 
     const toCurrency = document.getElementById('to').value; 
-    const resultadoElement = document.getElementById('local_do_resultado'); // Pega o elemento onde o resultado será exibido
+    const resultadoElement = document.getElementById('local_do_resultado'); // Pega o elemento onde o resultado será exibido.
+
+    
 
     // Limpa o resultado anterior
     resultadoElement.innerHTML = '';
@@ -56,8 +68,22 @@ async function clicar() {
 
         // Exibe o resultado dentro do elemento <p id="local_do_resultado">
         resultadoElement.innerHTML = `${valor} ${fromCurrencyName} (${fromCurrency.toUpperCase()}) = ${resultado} ${toCurrencyName} (${toCurrency.toUpperCase()})`;
+
+
     } catch (error) {
         console.error(error);
         resultadoElement.innerHTML = "Ocorreu um erro ao converter a moeda: " + error.message;
     }
 }
+
+let caixaDeChecagem = document.getElementById('caixaDeChecagem');
+
+let conversor_style = document.getElementById("conversor_style ");
+
+caixaDeChecagem.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+})
+
+conversor_style.addEventListener('change', () => {
+    document.conversor_style.classList.toggle('escuro');
+})
