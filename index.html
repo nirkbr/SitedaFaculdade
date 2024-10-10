@@ -7,22 +7,33 @@
     <title>ConvertCash</title>
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/vars.css">
-    <link rel="shortcut icon" href="src/imagens/Icone_do_site.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="src/imagens/IconeSite.png" type="image/x-icon">
 </head>
 
 <body>
+    <!--Inicio do site -->
+    <div class="menuStyle">
+        <ul class="menuList">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>
+                
+                <div class="botaoTema"> <!--Inicío do Botão que vai mudar o tema de cor do site-->
 
-    <div class="botaoTema"> <!--Inicío do Botão que vai mudar o tema de cor do site-->
+                <input type="checkbox" class="checkbox" id="caixaDeChecagem"> <!--Este input diz que aqui vai ser uma caixa de checagem-->
+        
+                <label for="caixaDeChecagem" class="btnIluminacao">
+                    <i class="fa-regular fa-moon"></i>
+                    <i class="fa-regular fa-sun"></i>
+                    <div id="ball"></div>
+                </label>
+            </div> <!-- Fim do Botão Tema -->
 
-        <input type="checkbox" class="checkbox" id="caixaDeChecagem"> <!--Este input diz que aqui vai ser uma caixa de checagem-->
-
-        <label for="caixaDeChecagem" class="btnIluminacao">
-            <i class="fa-regular fa-moon"></i>
-            <i class="fa-regular fa-sun"></i>
-            <div id="ball"></div>
-        </label>
-
-    </div> <!-- Fim do Botão Tema -->
+        </li>
+        </ul>
+    </div>
 
     
     <main action="#" class="#conversor_position"> <!-- Inicío do conversor -->
@@ -88,6 +99,21 @@
         </div> <!--Fim do conversor style-->
 
     </main> <!--Fim do Conversor-->
+
+    <footer>
+        <div class="footer_body">
+            <div class="estilo_footer">
+                <h1>Logo</h1>
+
+                <div class="contato">
+                    <h3 id="contatoTitle">Contate-nos</h3>
+                    <p>Lorem, ipsum dolor.</p>
+                </div>
+
+            </div> 
+
+        </div>
+    </footer>
 
     <script src="app.js"></script>
 

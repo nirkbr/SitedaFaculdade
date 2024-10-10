@@ -30,7 +30,7 @@ async function getExchangeRate(from) {
         throw new Error('Erro ao buscar dados da API: ' + (errorData.message || 'Resposta inválida'));
     }
     const data = await response.json();
-    return data.conversion_rates; // Retorna todas as taxas de câmbio
+    return data.conversion_rates; // Depois de procurar na APi. Retorna todas as taxas de câmbio
 }
 
 async function clicar() {
@@ -39,9 +39,7 @@ async function clicar() {
     const toCurrency = document.getElementById('to').value; 
     const resultadoElement = document.getElementById('local_do_resultado'); // Pega o elemento onde o resultado será exibido.
 
-    
-
-    // Limpa o resultado anterior
+    // Limpa o resultado que anteriormente foi mostrado.
     resultadoElement.innerHTML = '';
 
     if (isNaN(valor)) {
@@ -56,17 +54,17 @@ async function clicar() {
 
     try {
         const conversionRates = await getExchangeRate(fromCurrency);
-        const taxa = conversionRates[toCurrency.toUpperCase()]; // Busca a taxa de câmbio
+        const taxa = conversionRates[toCurrency.toUpperCase()]; // Busca a taxa de câmbio na API.
         if (!taxa) {
             throw new Error('Taxa de câmbio não encontrada.');
         }
         const resultado = (valor * taxa).toFixed(2);
 
-        // Obtém os nomes das moedas
+        // Obtém os nomes das moedas puxando da API.
         const fromCurrencyName = currencyNames[fromCurrency.toUpperCase()];
         const toCurrencyName = currencyNames[toCurrency.toUpperCase()];
 
-        // Exibe o resultado dentro do elemento <p id="local_do_resultado">
+        // Vai exibir o resultado dentro do elemento <p id="local_do_resultado">
         resultadoElement.innerHTML = `${valor} ${fromCurrencyName} (${fromCurrency.toUpperCase()}) = ${resultado} ${toCurrencyName} (${toCurrency.toUpperCase()})`;
 
 
@@ -76,14 +74,26 @@ async function clicar() {
     }
 }
 
+function loadflag(element) {
+    for(code in country_code){
+        if(code == element.value) {
+            let imgflag = element.getElement.queryselector("img");
+        }
+    }
+}
+
 let caixaDeChecagem = document.getElementById('caixaDeChecagem');
+//Declara aa variavel da caixa de alternação de cor.
 
 let conversor_style = document.getElementById("conversor_style ");
+//Mesma premissa só que agora é para o texto não alterar
 
 caixaDeChecagem.addEventListener('change', () => {
     document.body.classList.toggle('dark');
-})
+}) 
+// Adiciona o evento change e depois verifica nos arquivos atrás da class dark que está presente na class body no css, quando a encontra acontece uma troca de classes onde a class body vira dark.
 
 conversor_style.addEventListener('change', () => {
     document.conversor_style.classList.toggle('escuro');
 })
+// De novo é a mesma premissa só que agora com a class escuro que está no css.

@@ -9,20 +9,22 @@
 
 body {
     display: flex;
-    justify-content: center;
-    background-color: hsl(00, 0%, 85%);
+    flex-direction: column;
+    background-color: var(--color-body);
     transition: background 0.2s linear ;
 }
 
+/* Começo configurações do botão de modo claro e escuro */
+
 body.dark {
-    background: hsl(240, 30%, 10%);
+    background: var(--color-darkBTN);
 }
 
 
 .btnIluminacao {
     display: flex;
     width: 80px;
-    background-color: hsl(0, 0%, 5%);
+    background-color: var(--color-bodyBTN_ILU);
     margin: 15px 0 2px;
     
     height: 30px;
@@ -47,7 +49,7 @@ body.dark {
     border-radius: 50%;
 
     position: absolute;
-    background-color: #ffffff;
+    background-color: var(--color-scrollBall);
     transform:  translateX(0px);
     transition: transform 0.2s linear;
 }
@@ -57,30 +59,34 @@ body.dark {
 }
 
 .fa-moon {
-    color: hsl(40, 90%, 50%);
+    color: var( --color-colorMoon);
 }
 
 .fa-sun {
-    color: hsl(25, 90%, 50%);
+    color: var(--color-colorSun);
 }
+/* Fim das configurações do botão de modo claro e escuro*/
 
 /* Configurações da posição do conversor */
 .conversor_style {
-    margin: 6rem 2rem;
-    width: 65vh;
+    margin: 6rem auto;
+    width: 35%;
     height: 65vh;
-    background-color: hsl(00, 0%, 75%);
+
+    background-color: var( --color-colorBodyConversor);
     border-radius: 9px;
     display: flex;
+
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    
     padding: 1rem 0;
     transition: color 0.2s linear;
 }
 
-.conversor_style.escuro {
-    color:hsl(0, 0%, 8%)
+.conversor_style .escuro {
+    color: var( --color-contramedidas);
 }
 
 #valor {
@@ -111,7 +117,7 @@ body.dark {
 .de {
     width: 5rem;
     height: 4rem;
-    background-color: hsl(00, 0%, 80%);
+    background-color: var(--color-cordeFundoBandeira);
     border: solid 2px #000;
     border-radius: 2px;
 }
@@ -132,7 +138,7 @@ main .icone_moeda {
 .para {
     width: 5rem;
     height: 4rem;
-    background-color: hsl(00, 0%, 80%);
+    background-color: var(--color-cordeFundoBandeira);
     border: solid 2px #000;
     border-radius: 2px;
 }
@@ -152,12 +158,36 @@ main .icone_moeda {
     justify-content: center;
     text-align: center;
     width: 12rem;    
+
     height: 2rem;
     margin: 3rem auto 0.5rem;
-    background-color: #737476;
+    background-color: var(--color-colorResultado);
 }
 
 #local_do_resultado {
-    color: aliceblue;
+    color: var(--color-colorTeste);
     font-size: 10px;
+}
+
+/* Inicio do Footer */
+.footer_body {
+    width: 100%;
+    height: 37vh;
+    margin: 18px 0 13px;
+
+    background-color: var(--color-footer);
+    color: var(--color-colorTeste);
+}
+
+.estilo_footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem;
+}
+
+.menuStyle {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    background-color: var( --color-contramedidas);
 }
