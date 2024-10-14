@@ -1,7 +1,7 @@
  :root {
     --color-body: hsl(00, 0%, 85%);
     --color-bodyBTN_ILU: hsl(0, 0%, 5%);
-    --color-darkBTN: hsl(240, 30%, 10%);
+    --color-darkBTN: hsl(240, 30%, 5%);
     --color-scrollBall: #ffffff;
     --color-colorMoon: hsl(40, 90%, 50%);
     --color-colorSun: hsl(25, 90%, 50%);

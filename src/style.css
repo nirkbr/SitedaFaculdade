@@ -14,12 +14,42 @@ body {
     transition: background 0.2s linear ;
 }
 
-/* Começo configurações do botão de modo claro e escuro */
 
+/* Começo Área Menu */
+.menuStyle {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: var( --color-contramedidas);
+    color: var( --color-colorBodyConversor);
+}
+
+.menuList {
+    display: flex;
+    gap: 1rem;
+    margin: auto 20px;
+    background-color: rgb(157, 16, 239);
+}
+
+.linhaStyle {
+    color: var(--color-cordeFundoBandeira);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.menuStyle .linhaStyle:hover {
+    color: white;
+}
+/* Fim Área Menu */
+
+/* Começo configurações do botão de modo claro e escuro */
 body.dark {
     background: var(--color-darkBTN);
 }
-
 
 .btnIluminacao {
     display: flex;
@@ -27,12 +57,14 @@ body.dark {
     background-color: var(--color-bodyBTN_ILU);
     margin: 15px 0 2px;
     
-    height: 30px;
+    height: 6vh;
     border-radius: 5px;
     justify-content: space-between;
     align-items: center;
 
     padding: 8px 7px;
+    margin-right: 40px;
+    margin-top: 28px;
     cursor: pointer;
     position: relative;
     transform: scale(1.5);
@@ -85,7 +117,7 @@ body.dark {
     transition: color 0.2s linear;
 }
 
-.conversor_style .escuro {
+.conversor_style {
     color: var( --color-contramedidas);
 }
 
@@ -143,7 +175,7 @@ main .icone_moeda {
     border-radius: 2px;
 }
 
-#bandeira_para {
+.bandeira_para {
     width: 4rem;
 }
 
@@ -185,9 +217,16 @@ main .icone_moeda {
     padding: 4rem;
 }
 
-.menuStyle {
+/* Site Quem Somos */
+
+.BodyQuemSomos {
     display: flex;
-    width: 100%;
-    height: 20vh;
-    background-color: var( --color-contramedidas);
+    justify-content: center;
+
+    height: 60vh;
+    width: 70vh;
+    background-color: blue;
+
+    margin: 15px auto;
+    padding: 15px;
 }

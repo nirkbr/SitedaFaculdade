@@ -8,13 +8,72 @@
     <link rel="stylesheet" href="src/vars.css">
 </head>
 <body>
-    <h1>Quem Somos</h1>
+
+    <nav class="menuStyle">
+        <ul class="menuList">
+
+            <li >
+                <a href="index.html" class="linhaStyle">
+                   Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="linhaStyle">
+                    Contate-nos
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="linhaStyle">
+                    Nossa Equipe
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="botaoTema"> <!--Inicío do Botão que vai mudar o tema de cor do site-->
+
+            <input type="checkbox" class="checkbox" id="caixaDeChecagem"> <!--Este input diz que aqui vai ser uma caixa de checagem-->
+    
+            <label for="caixaDeChecagem" class="btnIluminacao">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-sun"></i>
+                <div id="ball"></div>
+            </label>
+
+        </div> <!-- Fim do Botão Tema -->
+
+    </nav>
+
+    <div class="BodyQuemSomos">
+        <h1>Quem Somos</h1>
+
+        <div id="txtQuemSomos">
+            <p></p>
+        </div>
+    </div>
+
+ 
 
 
+    <footer>
+        <div class="footer_body">
+            <div class="estilo_footer">
+                <h1>Logo</h1>
 
+                <div class="contato">
+                    <h3 id="contatoTitle">Contate-nos</h3>
+                    <p>Lorem, ipsum dolor.</p>
+                </div>
 
+            </div> 
 
-
+        </div>
+    </footer>
+    
     <script src="app.js"></script>
+
+    <script src="https://kit.fontawesome.com/57094d7fd5.js" crossorigin="anonymous"></script>
 </body>
 </html>
