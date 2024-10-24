@@ -15,21 +15,23 @@
     <nav class="menuStyle">
         <ul class="menuList">
 
-            <li >
+            <img src="src/imagens/IconeSite.png" alt="" id="logoMenu">
+
+            <li>
                 <a href="quemSomos.html" class="linhaStyle">
                     Quem Somos
                 </a>
             </li>
 
             <li>
-                <a href="#" class="linhaStyle">
+                <a href="contatenos.html" class="linhaStyle">
                     Contate-nos
                 </a>
             </li>
 
             <li>
                 <a href="#" class="linhaStyle">
-                    Nossa Equipe
+
                 </a>
             </li>
 
@@ -37,8 +39,9 @@
 
         <div class="botaoTema"> <!--Inicío do Botão que vai mudar o tema de cor do site-->
 
-            <input type="checkbox" class="checkbox" id="caixaDeChecagem"> <!--Este input diz que aqui vai ser uma caixa de checagem-->
-    
+            <input type="checkbox" class="checkbox" id="caixaDeChecagem">
+            <!--Este input diz que aqui vai ser uma caixa de checagem-->
+
             <label for="caixaDeChecagem" class="btnIluminacao">
                 <i class="fa-regular fa-moon"></i>
                 <i class="fa-regular fa-sun"></i>
@@ -46,10 +49,9 @@
             </label>
 
         </div> <!-- Fim do Botão Tema -->
-
     </nav>
 
-    
+
     <main action="#" class="#conversor_position"> <!-- Inicío do conversor -->
         <div class="conversor_style" id="conversor_style ">
 
@@ -69,13 +71,13 @@
                         <img src="https://flagsapi.com/US/flat/64.png" alt="Banderia Estados Unidos">
                         <!--Iamgem das bandeiras-->
                         <select name="from" id="from"> <!--Início das opções-->
-                            <option value="usd">USD</option>
-                            <option value="cad">CAD</option>
-                            <option value="aud">AUD</option>
-                            <option value="ndz">NZD</option>
-                            <option value="brl">BRL</option>
-                            <option value="jpy">JPY</option>
-                            <option value="cnh">CNH</option>
+                            <option value="usd">US</option>
+                            <option value="cad">CA</option>
+                            <option value="aud">AU</option>
+                            <option value="ndz">NZ</option>
+                            <option value="brl">BR</option>
+                            <option value="jpy">JP</option>
+                            <option value="gbp">GB</option>
                         </select><!--Fim das opções-->
                     </div>
                 </div> <!--Fim da Caixa de opções-->
@@ -88,15 +90,16 @@
                     <p>Para</p>
                     <div class="para">
 
-                     <img src="src/imagens/BR.png" alt="Bandeira Brasil" class="bandeira_para"> <!--Iamgem das bandeiras-->
+                        <img src="src/imagens/BR.png" alt="Bandeira Brasil" class="bandeira_para">
+                        <!--Iamgem das bandeiras-->
                         <select name="to" id="to">
-                            <option value="brl">BRL</option>
-                            <option value="usd">USD</option>
-                            <option value="cad">CAD</option>
-                            <option value="aud">AUD</option>
-                            <option value="ndz">NZD</option>
-                            <option value="jpy">JPY</option>
-                            <option value="cnh">CNH</option>
+                            <option value="brl">BR</option>
+                            <option value="usd">US</option>
+                            <option value="cad">CA</option>
+                            <option value="aud">AU</option>
+                            <option value="ndz">NZ</option>
+                            <option value="jpy">JP</option>
+                            <option value="GBP">GB</option>
                         </select>
                     </div>
                 </div><!--Fim do caixa para-->
@@ -117,23 +120,30 @@
     <footer>
         <div class="footer_body">
             <div class="estilo_footer">
-                <h1>Logo</h1>
-
+                <div>
+                    <img src="src/imagens/IconeSite.png" alt="" id="logoFooter">
+                    <p>Valorizamos cada centavo,<br> onde quer que você esteja.</p>
+                </div>
                 <div class="contato">
                     <h3 id="contatoTitle">Contate-nos</h3>
                     <p>Lorem, ipsum dolor.</p>
                 </div>
 
-            </div> 
-
+                <div class="nossaEQuipe">
+                    <h3>Nossa Equipe</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cumque veritatis qui, sunt
+                    voluptatibus nesciunt magni officia reiciendis ut rem libero dolorum odit asperiores, velit aliquid
+                    corrupti aperiam itaque incidunt?
+                </div>
+            </div>
         </div>
     </footer>
 
     <script src="src/js/app.js"></script>
-    <script src="src/js/paises.js"></script>
 
-    <script src="https://kit.fontawesome.com/57094d7fd5.js" crossorigin="anonymous"></script>
     <!--Importação do fontAwesome-->
+    <script src="https://kit.fontawesome.com/57094d7fd5.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

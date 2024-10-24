@@ -27,9 +27,15 @@ body {
 
 .menuList {
     display: flex;
+    align-items: center;
     gap: 1rem;
     margin: auto 20px;
-    background-color: rgb(157, 16, 239);
+    /* background-color: rgb(157, 16, 239); */
+}
+
+#logoMenu {
+    width: 5%;
+    border-radius: 5px;
 }
 
 .linhaStyle {
@@ -42,7 +48,7 @@ li {
 }
 
 .menuStyle .linhaStyle:hover {
-    color: white;
+    color: var(--color-colorHover);
 }
 /* Fim Área Menu */
 
@@ -201,32 +207,53 @@ main .icone_moeda {
     font-size: 10px;
 }
 
-/* Inicio do Footer */
+/* Inicio do Rodapé */
 .footer_body {
     width: 100%;
-    height: 37vh;
+    height: 37%;
     margin: 18px 0 13px;
 
     background-color: var(--color-footer);
-    color: var(--color-colorTeste);
+    color: var(--color-colorTexto);
+}
+
+#logoFooter {
+    width: 20%;
+    border-radius: 7px;
 }
 
 .estilo_footer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 4rem;
 }
+/* Fim do Rodapé do Site */
 
-/* Site Quem Somos */
-
+/* Página Quem Somos */
 .BodyQuemSomos {
     display: flex;
-    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 
-    height: 60vh;
-    width: 70vh;
-    background-color: blue;
+    width: 40%;
+    background-color: rgb(18, 18, 82);
+    color: antiquewhite;
 
     margin: 15px auto;
     padding: 15px;
+    border-radius: 6px;
+}
+
+
+.corpoEnviarEmail{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 30px;
+    width: 40%;
+    height: 60vh;
+
+    background-color: darkred;
+    margin: 30px auto;
 }

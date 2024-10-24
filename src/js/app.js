@@ -9,7 +9,7 @@ const currencyNames = {
     NZD: 'Dólar Neozelandês',
     BRL: 'Real',
     JPY: 'Yen Japonês',
-    CNH: 'Yuan Chinês'
+    GBP: 'Libra Esterlina'
 };
 
 const currencyFlags = { // Mesma coisa do anterior só que agora são as imagens

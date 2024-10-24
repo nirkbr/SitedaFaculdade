@@ -9,6 +9,7 @@
     --color-contramedidas: hsl(0, 0%, 8%);
     --color-cordeFundoBandeira: hsl(00, 0%, 80%);
     --color-colorResultado: #737476;
-    --color-colorTeste: aliceblue;
+    --color-colorTexto: aliceblue;
     --color-footer: hsl(0, 0%, 15%);
+    --color-colorHover: hsl(0, 0%, 100%);
  }
