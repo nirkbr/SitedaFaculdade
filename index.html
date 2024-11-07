@@ -13,9 +13,9 @@
 <body>
     <!--Inicio do site -->
     <nav class="menuStyle">
-        <ul class="menuList">
+        <img src="src/imagens/IconeSite.png" alt="Logo Do site" id="logoMenu">
 
-            <img src="src/imagens/IconeSite.png" alt="" id="logoMenu">
+        <ul class="menuList">
 
             <li>
                 <a href="quemSomos.html" class="linhaStyle">
@@ -64,47 +64,43 @@
                 <input type="number" name="valor" id="valor">
             </div>
 
-            <div class="entrega_de_resultados"> <!--Inicio do Container-->
-                <div class="caixa_de_selecao"> <!--Início da Caixa de opções-->
+            <div class="entrega_de_resultados">
+                <div class="caixa_de_selecao">
                     <p>De</p>
                     <div class="de">
-                        <img src="https://flagsapi.com/US/flat/64.png" alt="Banderia Estados Unidos">
-                        <!--Iamgem das bandeiras-->
-                        <select name="from" id="from"> <!--Início das opções-->
-                            <option value="usd">US</option>
-                            <option value="cad">CA</option>
-                            <option value="aud">AU</option>
-                            <option value="ndz">NZ</option>
-                            <option value="brl">BR</option>
-                            <option value="jpy">JP</option>
-                            <option value="gbp">GB</option>
-                        </select><!--Fim das opções-->
+                        <img src="src/imagens/US.png" alt="Bandeira Estados Unidos" id="imgFrom">
+                        <select name="from" id="from" onchange="loadflag(this, 'imgFrom')">
+                            <option value="USD">Dólar</option>
+                            <option value="CAD">Dólar Canadense</option>
+                            <option value="AUD">Dólar Australiano</option>
+                            <option value="EUR">Euro</option>
+                            <option value="BRL">Real</option>
+                            <option value="JPY">Iene</option>
+                            <option value="GBP">Libra Esterlina</option>
+                        </select>
                     </div>
-                </div> <!--Fim da Caixa de opções-->
-
+                </div>
+            
                 <div class="icone_moeda">
                     <i class="fa-solid fa-money-bill-transfer"></i>
                 </div>
-
-                <div class="caixa_de_para"> <!--Início do caixa para-->
+            
+                <div class="caixa_de_para">
                     <p>Para</p>
                     <div class="para">
-
-                        <img src="src/imagens/BR.png" alt="Bandeira Brasil" class="bandeira_para">
-                        <!--Iamgem das bandeiras-->
-                        <select name="to" id="to">
-                            <option value="brl">BR</option>
-                            <option value="usd">US</option>
-                            <option value="cad">CA</option>
-                            <option value="aud">AU</option>
-                            <option value="ndz">NZ</option>
-                            <option value="jpy">JP</option>
-                            <option value="GBP">GB</option>
+                        <img src="src/imagens/BR.png" alt="Bandeira Brasil" id="imgTo">
+                        <select name="to" id="to" onchange="loadflag(this, 'imgTo')">
+                            <option value="BRL">Real</option>
+                            <option value="USD">Dólar</option>
+                            <option value="CAD">Dólar Canadense</option>
+                            <option value="AUD">Dólar Australiano</option>
+                            <option value="EUR">Euro</option>
+                            <option value="JPY">Iene</option>
+                            <option value="GBP">Libra Esterlina</option>
                         </select>
                     </div>
-                </div><!--Fim do caixa para-->
-
-            </div> <!--Fim caixa de resultado-->
+                </div>
+            </div>
 
 
             <div class="resultado">
