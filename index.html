@@ -44,6 +44,7 @@
 
             <label for="caixaDeChecagem" class="btnIluminacao">
                 <i class="fa-regular fa-moon"></i>
+
                 <i class="fa-regular fa-sun"></i>
                 <div id="ball"></div>
             </label>
@@ -52,7 +53,7 @@
     </nav>
 
 
-    <main action="#" class="#conversor_position"> <!-- Inicío do conversor -->
+    <main class="#conversor_position" id="caixa"> <!-- Inicío do conversor -->
         <div class="conversor_style" id="conversor_style ">
 
             <header class="titulo_conversor">
@@ -66,37 +67,59 @@
 
             <div class="entrega_de_resultados">
                 <div class="caixa_de_selecao">
+
                     <p>De</p>
                     <div class="de">
-                        <img src="src/imagens/US.png" alt="Bandeira Estados Unidos" id="imgFrom">
+
+                        <img src="src/imagens/US.png" alt="Bandeira da primeira caixa do conversor de moedas, Está inicia com a bandeira dos Estados Unidos da America: US." id="imgFrom">
+
                         <select name="from" id="from" onchange="loadflag(this, 'imgFrom')">
                             <option value="USD">Dólar</option>
+
                             <option value="CAD">Dólar Canadense</option>
+
                             <option value="AUD">Dólar Australiano</option>
+
                             <option value="EUR">Euro</option>
+
                             <option value="BRL">Real</option>
+
                             <option value="JPY">Iene</option>
+
                             <option value="GBP">Libra Esterlina</option>
+
+                            <option value="KRW">Won</option>
+
                         </select>
                     </div>
                 </div>
             
                 <div class="icone_moeda">
-                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <i class="fa-solid fa-money-bill-transfer" id="trocar"></i>
                 </div>
             
                 <div class="caixa_de_para">
                     <p>Para</p>
                     <div class="para">
-                        <img src="src/imagens/BR.png" alt="Bandeira Brasil" id="imgTo">
+                        <img src="src/imagens/BR.png" alt="Bandeira da segunda caixa do conversor de moedas, Está inicia com a bandeira da República Federativa do Brasil: BR." id="imgTo">
+
                         <select name="to" id="to" onchange="loadflag(this, 'imgTo')">
                             <option value="BRL">Real</option>
+
                             <option value="USD">Dólar</option>
+
                             <option value="CAD">Dólar Canadense</option>
+
                             <option value="AUD">Dólar Australiano</option>
+
                             <option value="EUR">Euro</option>
+
                             <option value="JPY">Iene</option>
+
                             <option value="GBP">Libra Esterlina</option>
+
+                            <option value="KRW">Won</option>
+
                         </select>
                     </div>
                 </div>
@@ -115,21 +138,26 @@
 
     <footer>
         <div class="footer_body">
+
             <div class="estilo_footer">
                 <div>
-                    <img src="src/imagens/IconeSite.png" alt="" id="logoFooter">
+                    <img src="src/imagens/IconeSite.png" alt="Logo que representa nossa empresa a Convert Cash." id="logoFooter">
                     <p>Valorizamos cada centavo,<br> onde quer que você esteja.</p>
                 </div>
+
                 <div class="contato">
                     <h3 id="contatoTitle">Contate-nos</h3>
                     <p>Lorem, ipsum dolor.</p>
                 </div>
 
                 <div class="nossaEQuipe">
+
                     <h3>Nossa Equipe</h3>
+
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cumque veritatis qui, sunt
                     voluptatibus nesciunt magni officia reiciendis ut rem libero dolorum odit asperiores, velit aliquid
                     corrupti aperiam itaque incidunt?
+                    
                 </div>
             </div>
         </div>

@@ -9,18 +9,20 @@ const currencyNames = {
     EUR: 'Euro',
     BRL: 'Real',
     JPY: 'Yen Japonês',
-    GBP: 'Libra Esterlina'
+    GBP: 'Libra Esterlina',
+    KRW: 'Won'
 };
 
-const flags = {
-    USD: "src/imagens/US.png",
-    CAD: "src/imagens/CA.png",
-    AUD: "src/imagens/AU.png",
-    EUR: "src/imagens/UE.png",
-    BRL: "src/imagens/BR.png",
-    JPY: "src/imagens/JP.png",
-    GBP: "src/imagens/IG.png"
-};
+// const flags = {
+//     USD: "src/imagens/US.png",
+//     CAD: "src/imagens/CA.png",
+//     AUD: "src/imagens/AU.png",
+//     EUR: "src/imagens/UE.png",
+//     BRL: "src/imagens/BR.png",
+//     JPY: "src/imagens/JP.png",
+//     GBP: "src/imagens/IG.png",
+//     KRW: 'src/imagens/SC.png'
+// };
 
 async function getExchangeRate(from) {
     const response = await fetch(apiURL + from.toUpperCase());
@@ -83,14 +85,24 @@ async function clicar() {
 
 function loadflag(selectElement, imgId) {
     const selectedCurrency = selectElement.value;
-    const imgElement = document.getElementById(imgId); // < - vai acessa o elemento da imagem pelo seu id 
+    const imgElement = document.getElementById(imgId);
+    let img_end = "";
+    img_end = 'src/imagens/' + selectedCurrency.substring(0,2) + '.png';
+    // img_end = "https://flagsapi.com/"+ BE +"/flat/64.png"
+    // "https://flagsapi.com/BE/flat/64.png"
+    imgElement.src = img_end;
+    
+    console.log(img_end)
+   // alert(img_end);
+    // < - vai acessa o elemento da imagem pelo seu id 
 
-    if(flags[selectedCurrency]) {
-        imgElement.src = flags[selectedCurrency]; //Atualiza o estado da img
-    } else {
-        console.log(`por algum motivo a bandeira n foi encontrada ${selectedCurrency}`)
-    }
-    console.log(selectedCurrency)
+    // if(flags[selectedCurrency]) {
+    //     imgElement.src = flags[selectedCurrency]; //Atualiza o estado da img
+    // } else {
+    //     console.log(`por algum motivo a bandeira n foi encontrada ${selectedCurrency}`)
+    // }
+    // console.log(selectedCurrency);
+
 }
 
 let caixaDeChecagem = document.getElementById('caixaDeChecagem');
