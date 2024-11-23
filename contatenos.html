@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Contate
+    </title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/vars.css">
+    <link rel="shortcut icon" href="src/imagens/IconeSite.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <nav class="menuStyle"> <!--Começo do Menu-->
+
+        <img src="src/imagens/IconeSite.png" alt="" id="logoMenu">
+
+        <ul class="menuList">
+
+            <li>
+                <a href="index.html" class="linhaStyle">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="quemSomos.html" class="linhaStyle">
+                    Quem Somos
+                </a>
+            </li>
+        </ul>
+
+        <div class="botaoTema"> <!--Inicío do Botão que vai mudar o tema de cor do site-->
+            <input type="checkbox" class="checkbox"
+                id="caixaDeChecagem"><!--Este input diz que aqui vai ser uma caixa de checagem-->
+
+            <label for="caixaDeChecagem" class="btnIluminacao">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-sun"></i>
+                <div id="ball"></div>
+            </label>
+        </div> <!-- Fim do Botão Tema -->
+    </nav> <!--Fim do menu-->
+
+    <form action="https://api.staticforms.xyz/submit" method="post" class="corpoContato"> <!-- Incio do corpo do CTN-->
+
+        <h1>Envie seu Email</h1>
+
+        <label class="linhaCT">Nome</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" class="inputCT" required autocomplete="off">
+
+        <label class="linhaCT">Email</label>
+        <input type="email" name="email" placeholder="Digite seu Email" class="inputCT" required autocomplete="off">
+
+        <label>Area de texto</label>
+        <textarea name="message" id="areatexto" placeholder="Digite sua mensagem" required></textarea>
+
+        <button type="submit" id="submit">Enviar</button>
+
+
+        <input type="hidden" name="accessKey" value="4e0582ac-4627-41ab-8016-5bce06c040fb">
+
+        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+    </form> <!-- Incio do corpo do CTN-->
+
+
+    <script src="js/app.js"></script>
+
+    <!--Importação do fontAwesome-->
+    <script src="https://kit.fontawesome.com/57094d7fd5.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
