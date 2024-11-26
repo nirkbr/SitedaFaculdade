@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+/* Importação da font Popins do google fontes */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-colorBody);
+    transition: background 0.2s linear ;
+}
+
+
+/* Começo Área Menu */
+.menuStyle { 
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-contramedidas);
+    color: var(--color-colorBodyConversor);
+}
+
+.menuList {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: auto 20px;
+}
+
+#logoMenu {
+    width: 7.8%;
+    height: 89%;
+    border-radius: 20px;
+    margin: 8px 6px;
+}
+
+.linhaStyle {
+    color: var(--color-cordeFundoBandeira);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.menuStyle .linhaStyle:hover {
+    transition: 1s;
+    color: var(--color-colorHover);
+}
+/* Fim Área Menu */
+
+/* Começo configurações do botão de modo claro e escuro */
+body.light {
+    background: var(--color-BTNLight);
+}
+
+.btnIluminacao {
+    display: flex;
+    width: 80px;
+    background-color: var(--color-bodyBTN_ILU);
+    margin: 15px 0 2px;
+    
+    height: 6vh;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 7px;
+    margin-right: 40px;
+    margin-top: 28px;
+    cursor: pointer;
+    position: relative;
+    transform: scale(1.5);
+}
+
+.checkbox {
+    opacity: 0;   
+    position: absolute;
+}
+
+ .btnIluminacao #ball {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+
+    position: absolute;
+    background-color: var(--color-scrollBall);
+    transform:  translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .btnIluminacao  #ball {
+    transform: translateX(46px);
+}
+
+.fa-moon {
+    color: var(--color-colorSun);
+}
+
+.fa-sun {
+    color: var(--color-colorMoon);
+}
+/* Fim das configurações do botão de modo claro e escuro*/
+
+/*Inicio conversor */
+.conversor_style {
+    margin: 6rem auto;
+    width: 35%;
+    height: 65vh;
+
+    background-color: var(--color-colorBodyConversor);
+    border-radius: 9px;
+    display: flex;
+
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+    padding: 1rem 0;
+    transition: color 0.2s linear;
+}
+
+.conversor_style {
+    color: var(--color-contramedidas);
+}
+
+#valor {
+    width: 70%;
+}
+
+.entrega_de_resultados {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1%;
+    
+}
+
+.caixa_de_selecao {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem -2rem; 
+}
+  
+.entrega_de_resultados i {
+   padding-top: 2.5rem;
+} 
+
+.caixa_de_para {
+    display: flex;
+    flex-direction: column;
+}
+
+.de {
+    width: 5rem;
+    height: 4rem;
+    background-color: var(--color-cordeFundoBandeira);
+    border: solid 2px #000;
+    border-radius: 2px;
+}
+
+#bandeira_De {
+    width: 4rem;
+}
+
+select {
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+main .icone_moeda {
+    cursor: pointer;
+    width: 80px;
+}
+
+.para {
+    width: 5rem;
+    height: 4rem;
+    background-color: var(--color-cordeFundoBandeira);
+    border: solid 2px #000;
+    border-radius: 2px;
+}
+
+.bandeira_para {
+    width: 4rem;
+}
+
+#botao_converter {
+    width: 50%;
+    cursor: pointer;
+    margin: 1rem auto 2rem;
+}
+
+.resultado {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 12rem;    
+
+    height: 2rem;
+    margin: 3rem auto 0.5rem;
+    background-color: var(--color-colorResultado);
+}
+
+#local_do_resultado {
+    color: var(--color-colorTeste);
+    font-size: 10px;
+}
+/* fim do Conversor de moedas */
+
+/* Inicio do Rodapé */
+.footer_body {
+    width: 100%;
+    height: 37%;
+    margin: 18px 0 13px;
+
+    background-color: var(--color-footer);
+    color: var(--color-colorTexto);
+}
+
+#logoFooter {
+    width: 30%;
+}
+
+.footer_body a {
+    color: var(--color-colorTextQSM);
+    text-decoration: none;
+    grid: 5px;
+}
+
+.topicos a:hover {
+    transition: 0.5s;
+    color: var(--color-colorHover);
+}
+
+.estilo_footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem;
+}
+
+.topicos {
+    margin-top: 5px;
+}
+
+.hrstyle {
+    width: 20%;
+}
+
+#nsHR {
+    width: 30%;
+}
+
+/* Fim do Rodapé do Site */
+/* Fim da Página do conversor */
+
+/* Página Quem Somos */
+/* Inicio do prim container do QMS */
+.formulacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.bodyQuemSomos {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    width: 40%;
+    background-color: var(--color-colorBodyQSM);
+    color: var(--color-colorTextQSM);
+
+    padding: 35px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.bodyQuemSomos p {
+    margin-top: 18px;
+}
+
+.bodyQuemSomos hr {
+    width: 70%;
+    margin-left: 14%;
+}
+
+#fotoIlustracao {
+    width: 43.2%;
+    border-radius: 0px 15px 15px 0;
+}
+/* Fim do primeiro container do Qms */
+
+/* inicio do segundo container do Qms */
+.bodyNossosValores {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    width: 39%;
+    background-color: var(--color-colorBodyQSM);
+    color: var(--color-colorTextQSM);
+
+    padding: 35px;
+    border-radius: 15px 0 0 15px; 
+}
+
+#imgNV {
+    width: 35.2%;
+    border-radius: 0px 15px 15px 0;
+}
+
+.bodyNossosValores p {
+    margin-top: 18px;
+}
+
+.bodyNossosValores hr {
+    width: 70%;
+    margin-left: 14%;
+}
+
+.legenda {
+    display: flex;
+    justify-content: center;
+    color: var(--colot-figureCaption);
+}
+
+figcaption.luz {
+    color: black;
+}
+
+figcaption, a {
+   text-decoration: none;
+}
+
+.containerEquipe {
+    width: 70%;
+    margin: 7% auto;
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--color-colorBodyQSM);
+    color: var(--color-colorTextQSM);
+    border-radius: 12px;
+}
+
+/* Fim do segundo container doo QMS */
+/* Fim da estilização da página QMS */
+
+/* Começo Da estilização do contatenos */
+.corpoContato {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    width: 40%;
+    background-color: var(--color-bodyConteudo);
+    color: var(--color-colorTexto);
+
+    margin: 30px auto;
+    padding: 15px 45px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;
+}
+
+.corpoContato h1 {
+    margin: 1rem 0 2rem 0;
+}
+
+.linhaCT {
+    margin: 3px;
+}
+
+.inputCT {
+    height: 2rem;
+    font-size: 15px;
+    margin-bottom: 15px;
+
+    outline: none;
+    transition: all 1s;
+}
+
+.corpoContato .inputCT:focus {
+    border-radius: 5px;
+}
+
+.corpoContato #areatexto {
+    height: 9rem;
+    margin: 3px 0 1rem;
+
+    font-size: 16px;
+    outline: none;
+    transition: all 1.5s;
+}
+
+.corpoContato #areatexto:focus {
+    border-radius: 10px;
+}
+
+#submit {
+    margin: 15px 0px;
+    width: 100%;
+    height: 2.9rem;
+
+    background-color: transparent;
+    color: var(--color-colorTexto);
+    border: solid 2px ;
+    transition: 1s;
+}
+
+#submit:hover {
+    background-color: var(--color-colorBodyConversor);
+    color: var(--color-corTextoPreto);
+}
+
+.obrigado {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-bodyConteudo);
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-colorTexto);
+}
+
+.obrigado a {
+    color: var(--color-colorTexto);
+}
+
+.obrigado a:hover {
+    color: var(--color-linkAnimation);
+}
