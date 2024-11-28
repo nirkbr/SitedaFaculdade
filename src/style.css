@@ -427,7 +427,7 @@ figcaption a {
     width: 90%;
     max-width: 1200px;
 
-    margin: 15px auto;
+    margin: 0px auto 15px;
     padding: 20px;
     background: var(--color-colorTeam);
 
@@ -457,10 +457,14 @@ figcaption a {
     font-weight: 300;
 }
 
-/* Efeitos ao passar o mouse */
 .team-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#nossaEquipe {
+    color: var(--color-colorTexto);
+    margin: 60px auto 0;
 }
 
 #Pedro {
