@@ -473,6 +473,11 @@ figcaption a {
     margin: 60px auto 0;
 }
 
+#NossaEquipe {
+    color: var(--color-colorTexto);
+    margim: 60px;
+}
+
 #Pedro {
     width: 70%;
     border-radius: 90px;
