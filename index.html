@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertCash</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/vars.css">
+    <link rel="shortcut icon" href="src/imagens/IconeSite.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--Inicio do site -->
+    <nav class="menuStyle">
+        <img src="src/imagens/LogoDoSite.png" alt="Logo Do site" id="logoMenu">
+
+        <ul class="menuList">
+            <li>
+                <a href="quemSomos.html" class="linhaStyle">
+                    Quem Somos
+                </a>
+            </li>
+
+            <li>
+                <a href="contatenos.html" class="linhaStyle">
+                    Contate-nos
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="linhaStyle">
+
+                </a>
+            </li>
+        </ul>
+
+        <div class="botaoTema"> <!--Inicío do Botão que vai mudar o tema de cor do site-->
+
+            <input type="checkbox" class="checkbox" id="caixaDeChecagem">
+            <!--Este input diz que aqui vai ser uma caixa de checagem-->
+
+            <label for="caixaDeChecagem" class="btnIluminacao">
+                <i class="fa-regular fa-sun"></i>
+                <i class="fa-regular fa-moon"></i>
+                <div id="ball"></div>
+            </label>
+
+        </div> <!-- Fim do Botão Tema -->
+    </nav>
+
+
+    <main class="#conversor_position" id="caixa"> <!-- Inicío do conversor -->
+        <div class="conversor_style" id="conversor_style ">
+
+            <header class="titulo_conversor">
+                <h1>Conversor de Moedas</h1>
+            </header>
+
+            <div class="insira_um_valor">
+                <p>Converta sua moeda!</p>
+                <input type="number" name="valor" id="valor">
+            </div>
+
+            <div class="entrega_de_resultados">
+                <div class="caixa_de_selecao">
+
+                    <p>De</p>
+                    <div class="de">
+
+                        <img src="src/imagens/US.png" alt="Bandeira da primeira caixa do conversor de moedas, Está inicia com a bandeira dos Estados Unidos da America: US." id="imgFrom">
+
+                        <select name="from" id="from" onchange="loadflag(this, 'imgFrom')">
+                            <option value="USD">Dólar</option>
+
+                            <option value="CAD">Dólar Canadense</option>
+
+                            <option value="AUD">Dólar Australiano</option>
+
+                            <option value="EUR">Euro</option>
+
+                            <option value="BRL">Real</option>
+
+                            <option value="JPY">Iene</option>
+
+                            <option value="GBP">Libra Esterlina</option>
+
+                            <option value="KRW">Won</option>
+
+                        </select>
+                    </div>
+                </div>
+            
+                <div class="icone_moeda">
+                    <i class="fa-solid fa-money-bill-transfer" id="trocar"></i>
+                </div>
+            
+                <div class="caixa_de_para">
+                    <p>Para</p>
+                    <div class="para">
+                        <img src="src/imagens/BR.png" alt="Bandeira da segunda caixa do conversor de moedas, Está inicia com a bandeira da República Federativa do Brasil: BR." id="imgTo">
+
+                        <select name="to" id="to" onchange="loadflag(this, 'imgTo')">
+                            <option value="BRL">Real</option>
+
+                            <option value="USD">Dólar</option>
+
+                            <option value="CAD">Dólar Canadense</option>
+
+                            <option value="AUD">Dólar Australiano</option>
+
+                            <option value="EUR">Euro</option>
+
+                            <option value="JPY">Iene</option>
+
+                            <option value="GBP">Libra Esterlina</option>
+
+                            <option value="KRW">Won</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="resultado">
+                <p id="local_do_resultado"></p>
+            </div>
+
+            <input type="button" value="converter" id="botao_converter" onclick="clicar()">
+
+        </div> <!--Fim do conversor style-->
+
+    </main> <!--Fim do Conversor-->
+
+    <footer class="footer_body">
+            <div class="estilo_footer">
+                <div class="containerDoLogo">
+                    <img src="src/imagens/LogoDoSite.png" alt="Logo que representa nossa empresa a Convert Cash." id="logoFooter">
+                    <p>Valorizamos cada centavo,<br> onde quer que você esteja.</p>
+                </div>
+
+                <div class="styleTopicos">
+                    <h3>Tópicos Do Site</h3>
+                    <hr class="hrtopicosGeral">
+                    <ul>
+                        <li class="topicos">
+                            <a href="quemSomos.html" class="topicos">Nos conheça</a>
+                        </li>
+                        <li class="topicos">
+                            <a href="contatenos.html" class="topicos">Contate-nos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+    <div id="copyryte">
+        <p>&copy; Direitos Reservados desde 2024.</p>
+    </div>
+
+    <script src="js/app.js"></script>
+
+    <!--Importação do fontAwesome-->
+    <script src="https://kit.fontawesome.com/57094d7fd5.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
